@@ -1,0 +1,36 @@
+.your-project {
+	width: 100%;
+
+	background: url(../img/your-project/background-min.jpg) center / cover no-repeat fixed;
+
+	@media (max-width: 992px) {
+		background: url(../img/your-project/background-min.jpg) center / cover no-repeat fixed;
+	}
+
+	&__wrapper {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&__title {
+		padding: 0 20px;
+
+		color: #ffffff;
+		font-family: "Chivo", serif;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 44px;
+	}
+
+	&__button {
+		margin: 70px auto 0 auto;
+
+		@media (max-width: 900px) {
+			margin: 60px auto 0 auto;
+		}
+
+		@media (max-width: 650px) {
+			margin: 50px auto 0 auto;
+		}
+	}
+}

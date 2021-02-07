@@ -1,0 +1,166 @@
+@import "_popup";
+@import "_footer";
+@import "_contact";
+@import "_clients";
+@import "_blog";
+@import "_your-project";
+@import "_works";
+@import "_about";
+@import "_services";
+@import "_header";
+
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Archivo-SemiBold.woff2') format('woff2'),
+	url('../fonts/Archivo-SemiBold.ttf') format('truetype'),
+        url('../fonts/Archivo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Archivo-Italic.woff2') format('woff2'),
+	url('../fonts/Archivo-Italic.ttf') format('truetype'),
+        url('../fonts/Archivo-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Archivo-Bold.woff2') format('woff2'),
+	url('../fonts/Archivo-Bold.ttf') format('truetype'),
+        url('../fonts/Archivo-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Archivo-Regular.woff2') format('woff2'),
+	url('../fonts/Archivo-Regular.ttf') format('truetype'),
+        url('../fonts/Archivo-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Archivo-Medium.woff2') format('woff2'),
+	url('../fonts/Archivo-Medium.ttf') format('truetype'),
+        url('../fonts/Archivo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+* {
+	box-sizing: border-box;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.wrapper {
+	min-width: 320px;
+	max-width: 1230px;
+	width: 100%;
+	min-height: inherit;
+	transition: 0s;
+}
+
+.button {
+	width: 180px;
+	padding: 15px 0;
+	border: #fff 1.5px solid;
+	border-radius: 5px;
+
+	background-color: rgba($color: #000000, $alpha: 0);
+
+	color: #fff;
+	font-family: "Chivo", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+
+	@media (min-width: 992px) {
+		&:hover {
+			color: #000;
+	
+			background-color: rgba($color: #fff, $alpha: 1);
+		}	
+	}
+}
+
+.title {
+	padding-left: 20px;
+
+	display: block;
+	position: relative;
+
+	color: #000;
+	font-family: "Chivo", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 20px;
+
+		width: 50px;
+		height: 2px;
+		margin-bottom: -30px;
+
+		background-color: #000;
+	}
+}
+
+.text {
+	margin-top: 55px;
+	padding: 0 20px;
+
+	color: rgb(33, 34, 34);
+	font-family: "Chivo", serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+.padding {
+	padding: 100px 0;
+
+	@media (max-width: 900px) {
+		padding: 80px 0;
+	}
+
+	@media (max-width: 650px) {
+		padding: 60px 0;
+	}
+}
+
+.hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transform: scale(0.95);
+	visibility: hidden;
+}
+
+.page-wrapper {
+	min-height: 100vh;
+	transition: 0s;
+}
